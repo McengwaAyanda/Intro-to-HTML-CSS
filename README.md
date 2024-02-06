@@ -26,5 +26,46 @@ The hierarchical system of the headlines gives meaning browser, distinguishing w
 which is crucial for screen reader users who rely on consistent hierarchical information to navigate the page.
 
 # HTML Bold and Italics
-There are 4 elements in HTML that allow us to mark text as bold or italicized. Two of them "<em>" and "<strong>", convey meaning  and serve a language-related purpose. The other two, "<i>" and "<b>" do not
+There are 4 elements in HTML that allow us to mark text as bold or italicized. Two of them '<em>' and '<strong>', convey meaning  and serve a language-related purpose. The other two, '<i>' and '<b>' do not
 carry any specific meaning and are solely for visual styling 
+
+# HTML lists
+There are 3 types of lists: Ordered list, unordered list and definition list
+ # Unordered list
+Unordered list are the most commonly used type. each item in the list is enclosed in an <li> element, which represent a list item.
+To define the entire list and specify its type, we wrap all the items in a <ul> element, which stands for unordered list.
+If you want to make our code more readable, indent the list items by adding some space or tabs before each other. However, this indentation does not affect how this page looks.
+The default appearance of the list markers is determined byt the browser, but we choose <ul> not solely for its appearance. It is the appropriate choice for conveying meaning and we can use CSS to change the look.
+ # Ordered list
+ Ordered list is similar to unordered list but with slight difference. Instead of using <ul> to wrap the list items, we use <ol>.
+ The term 'ol' stands for ordered list, indicating that the is a specific order to the items in the list.
+  # Definition list
+Definition list is used when we want to create a lits that resembles a key-value pair in computer science. Instead of just items, we have terms and thier corresponding descriptions.
+To create a definition list, we use specific elements. The term or key is enclosed in a <dt>tag, which stands for definition term. The description or value is enclosed in a <dd>tag, which stands for definition description.
+The entire list is wrapped in a <dl>tag representing the definition list. interestingly, the <dd>tags and <dt>tag are placed side by side without any additional wrapper around them.
+
+# HTML Quotes
+These 2 elemnts, <cite> and <blockquote>, serve a semantic purpose. they inform other computers, "Hey this is what it is", additionally, they provide a convenient way to apply custom styling.
+The important thing is that elements should be nested within each other in a way that makes sense.
+To make things easier, we can use <q> element in HTML which stands for quote.  by using this element the browser will add the appropriate quote marks for us.
+Some HTML elements, like <i>, <strong>, <b> and <em> are called inline, because they are meant to wrap around phrases of text that are inline with other content.
+There are certain elements in HTML known as block-level elements, like block quotes, paragraphs and unordered lists. These elements essentially  create separate blocks on the page.
+Some elements serve as markers for something that is part of a larger enitty, while others represent the larger enitity itself.
+HTML attributes provide additional information to HTML elements. in this case, datetime attribute allows us to specify the date or time in a format that computers can understand. We write it like this: <time datetime= "2025-05-02"> May 02, 2025 </time>.
+The format of the date within the date time has to be specific. Dates and times have a special format that machines can understand, we need to use that format.
+Machines prefer a highly standardized format, and we can also indicate times using the time element. The machine-readable version prefers numbers in the 24-hour clock format and we can choose whether to include seconds and fractions of a second or not.
+You can also combine the time and date using the datetime attribute. first you include the date than the time. you have a couple of options for separating them, you can use a T or leave a space.
+There are various ways to format the machine-readable time, they are all acceptable and correct, and they apply to many programming languages.
+
+# HTML code, pre and br
+By default, code is treated as an inline element, meaning that it remains part of the sentence its in.
+The 'Br' element is a simple tag without the opening or closing tag. It does not contain anything inside it, it just indicates where the line needs to break
+Pre and code are often combined to display a code block with proper indentation. we have the code, br and pre working together, and these elements are handy for conveying the structure and appearance of code, as well as other types of contents.
+
+# HTML Superscripts, Subscripts and Small text
+Superscripts, subscripts and small text can be used where you need to mark up certain bits of content as having a different meaning than the rest.
+Subscripts are characters that are set below the normal baseline for text, while Superscript are characters that are set above the normal baseline for text.
+Small, sub, and sup are the elements that can help you get the details right when it comes to typography and conveying the full meaning of your content.
+
+# Debugging and troubleshooting HTML code
+If you are ever about the markup to use, visit other websites with similar content and use the developer tools to find out which elements they used. it is especially useful if the website was built by a team we admire because studying others' work helps understand how to structure your own HTML
