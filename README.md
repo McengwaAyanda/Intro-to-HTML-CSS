@@ -69,3 +69,21 @@ Small, sub, and sup are the elements that can help you get the details right whe
 
 # Debugging and troubleshooting HTML code
 If you are ever about the markup to use, visit other websites with similar content and use the developer tools to find out which elements they used. it is especially useful if the website was built by a team we admire because studying others' work helps understand how to structure your own HTML
+
+# HTML Attributes
+When looking at global attributes in HTML that work universally, we will look at 4 highly useful ones.
+The class attribute is the most commonly used. it allows us to assign a reusable name to any element, which can than be styled using CSS, for all elements sharing that class.
+Another popular attribute is the Id. it is similar to the class attribute, but we can use unique names once on the entire HTML page. IDs can be used for CSS targeting, but are more specific and can sometimes cause issues.
+IDs come in handy when we need to address specific elements in Javascript or targeted links. The uniqueness of an ID name ensures that there will always be one element with that ID, making it useful for interacting with Javascript or links.
+Class and ID attributes provide a way to name HTML elements and reference them to other parts of the code stack.
+HTML offers many attributes that enhance user interaction and provide hooks into browser power. These attribute such as 'content editable' allow interaction with the screen, keyboard, and assistive devices. They facilitate the editing capability within the browser.
+The 'dir' attribute explicitly indicates the direction which the text flows using "LTR" for Left-To-Right and "RTL" for Right-To-Left scripts. These attributes "lang" and "dir" are considered global attributes and can be used on any HTML element.
+
+# Aria Roles
+Aria roles are like extra HTML attributes that we can add to HTML elements to make them more meaningful and help browsers understand what they represent. 
+Aria roles come into play when we want to provide essential information to assistive technologies like screen readers, braille displays and magnifiers to ensure a website is fully accessible.
+The accessibility tree is like a companion to the DOM tree, which the browser creates from the websites content. while the DOM tree represents the HTML structure, the accessibility tree is crucial for assistive devices like screen readers.
+When we look at the accessibility tree, we can see that it treats the content as separate text containers. this results in poor experience, such as each letterbeing read individually. to improve this we use Aria.
+Aria is a powerful tool that greatly enhance web accessibility and is worth exploring further. Aria provides the necessary tools to make your site accessible to everyone.
+
+# Formatting HTML
