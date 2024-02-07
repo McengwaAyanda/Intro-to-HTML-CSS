@@ -83,7 +83,36 @@ The 'dir' attribute explicitly indicates the direction which the text flows usin
 Aria roles are like extra HTML attributes that we can add to HTML elements to make them more meaningful and help browsers understand what they represent. 
 Aria roles come into play when we want to provide essential information to assistive technologies like screen readers, braille displays and magnifiers to ensure a website is fully accessible.
 The accessibility tree is like a companion to the DOM tree, which the browser creates from the websites content. while the DOM tree represents the HTML structure, the accessibility tree is crucial for assistive devices like screen readers.
-When we look at the accessibility tree, we can see that it treats the content as separate text containers. this results in poor experience, such as each letterbeing read individually. to improve this we use Aria.
+When we look at the accessibility tree, we can see that it treats the content as separate text containers. this results in poor experience, such as each letter being read individually. to improve this we use Aria.
 Aria is a powerful tool that greatly enhance web accessibility and is worth exploring further. Aria provides the necessary tools to make your site accessible to everyone.
 
 # Formatting HTML
+In HTML comments are inserted by typing "<!-- comments -->". These comments are disregarded by the browser, but code editors like Notepad++ can display commented code or remarks in a grayed-out fashion. 
+This feature helps developers quickly identify when code is commented out and prevents any confusion when it does not function as expected.
+People used to capitalize all their HTML elements, but as HTML evolved, the web industry embraced the idea of using lowercase letters for everything. The broswer isn't affected either way.
+Some HTML elements are short like <i> and <p> while some are long like <article> and <video>. The reason for this is that when HTML was first created, computer scientist were focused on optimizing file size due to limited computer resources. 
+As technology advanced and computer memory expanded, it became less crucial to save a few characters and more important to prioritize code readability and understanding for humans. Hence, newer HTML elements started using complete words instead of abbriviations. This change made it easier for english-speaking people to comprehend the code.
+Nowadays, the length of an element can give us a clue about how long it has been in existance.
+A bunch of elements in this course and most of them have a opening and closing tag. The newer HTML elements always have both tags, but for some of the older elements the are no closing tags.
+
+# Unusual characters
+The symbols < > and & are important characters in HTML.
+In the demo, we used something called character entity in HTML. These entities are formatted like this: an ampersand, ashort code and a semicolon. When we use these in HTML files, they are converted into the specific characters we want. we applied this technique to replace every instance of greater-than or less-than symbols with their corresponding character entities.
+
+#HTML Navigation and linking
+
+# HTML Links
+When we want to create a link, we use the "A" element, which stands for "anchor". to do this, we need to add a "href" attribute with a URL enclosed in quotes. This URL is where the link will take us. 
+The term "href" stands for "HyperText reference", a nerdy phrase from the past.
+By default, the "A" element is inline and can be placed within a paragraph or any other text. Links are not limited to just text but we can wrap them around images or even more complex elements like teaser cards. This allows us to create a group of linked elements.
+When linking to another website or a specific page on a web, you can include the entire URL. It doesn't matter if it has a trailing slash or not. These types of URLs are called "Absolute URLs" because they point to a precise location on the web. 
+In an absolute Url, the HTTP or HTTPS part must be included which stands for "HyperText Transfer Protocol". This protocol defines the rules of communication on the web and is crucial for linking.
+When creating links as developers or content creators, we need to include them ourselves. This protocol is one of the significant inventions when the web was created. This is how links are made using absolute URLs.
+
+# HTML URL Pathways
+When forming links, absolute URLs are one option. When linking to something within the same site and domain as the page containing the link, a relative URL can be used instead.
+Creating a relative URL is not only useful for the "A" element(linking), but it is also a skill used to reference image files, video files, CSS, Javascript files or any other where a files pathis specified.
+To form a URL, you need to grasp how files are organized. filenames comes with extensions like ".html", "jpg", "CSS", "js", whereas directories or folder names have no extentions. The Slashes in a Url indicate that we should look deeper into the file structure or go one level down.
+Creating well structured and elegent URLs for web page is an art. it is worth considering how your URLs impact user experience and search engine results. Craft URLs carefully.
+Using relative URLs can be extremely helpful, especially when working on a project that moves from server to server.
+URLs can be either relative or absolute. Relative URLs are based on the current files location, while absolute URLs start from the root of the website. By using folders and index.html files, we can create clean and user-friendly URLs.
