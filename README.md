@@ -116,3 +116,8 @@ To form a URL, you need to grasp how files are organized. filenames comes with e
 Creating well structured and elegent URLs for web page is an art. it is worth considering how your URLs impact user experience and search engine results. Craft URLs carefully.
 Using relative URLs can be extremely helpful, especially when working on a project that moves from server to server.
 URLs can be either relative or absolute. Relative URLs are based on the current files location, while absolute URLs start from the root of the website. By using folders and index.html files, we can create clean and user-friendly URLs.
+
+# Navigation
+Each link is wrapped in an element with the correct URL, and then enclosed in a "<li>" element to create a list of links. To maintain order, wrap the whole list in a "<ul>"element which represents an unordered list. Finally, encompass the entire menu in a "<nav>" element to indicate that it is the site's navigation.
+To give the menu a visual appearance, apply CSS styling. Without CSS styling, it appears as a plain list, however, we want screen readers and assistive devices to understand that it is a main menu.
+Assign the role "navigation" to the "<nav>" element, which signifies that it represents the main navigation of the page. Include an "aria label" for the main menu, providing a descriptive label that can be read alound by a screen reader.
