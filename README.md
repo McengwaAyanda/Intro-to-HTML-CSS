@@ -121,3 +121,22 @@ URLs can be either relative or absolute. Relative URLs are based on the current 
 Each link is wrapped in an element with the correct URL, and then enclosed in a "<li>" element to create a list of links. To maintain order, wrap the whole list in a "<ul>"element which represents an unordered list. Finally, encompass the entire menu in a "<nav>" element to indicate that it is the site's navigation.
 To give the menu a visual appearance, apply CSS styling. Without CSS styling, it appears as a plain list, however, we want screen readers and assistive devices to understand that it is a main menu.
 Assign the role "navigation" to the "<nav>" element, which signifies that it represents the main navigation of the page. Include an "aria label" for the main menu, providing a descriptive label that can be read alound by a screen reader.
+
+# HTML Working with Graphics and Images
+When we want to add images to a web page, we use the image element, which is simply written as "<img src="image.jpg" alt="brown dog" width="400" height="300">"
+there are 4 attributes that need to be included for every image
+1. We have the source attribute(SRC), which tell the browser which image file to load.
+2. than we have the alt attribute(ALT), which provides a text description for the image.
+3. lastly we have the width and height attributes, which determine the size of the image. so every image should have all four of these attributes.
+The Image's URL is pasted in the source, and than the image starts loading. Add an ALT attribute, which serves as a replacement for when the image cannot be seen.
+Make the ALT text interesting. There is no need to make a lengthy description just focus on what it depicts. You have the option to make the ALT text funny or poetic, and if there is nothing significant to convey about the image, simply leave the ALT text blank.
+If the ALT is omitted altogether, there is a chance that the image filename will be read aloud, and we definitely do not want that to happen.
+It does not matter whether the height or width is specified first. In HTML, the order of attributes within an element can be whatever you prefer.
+
+# Image formats
+The image file itself is a crucial aspect to consider when putting an image on a webpage.It need to be in a file format that web browsers can understand, and there are various options available
+We keep coming up with different formats in our pursuit of finding the perfect balance between small file sizes and visually stunning images. we desire a large amount of data to make the image look fantastic, but also minimize the data to ensure faster downloads and prevent excessive data usage for users. Essentialy, we aim for the highest possible quality with the smallest file size achievable. Each file format employes a distinct approach to tackle this challenge, utilizing different techniques to compress the image.
+There are four main file formats commonly used on the web these days, each with its own strengths and weaknesses when it comes to compressing images: GIF, SVG, JPG, PNG.
+
+# Responsive Images
+CSS offers a solution for displaying images in different sizes to accommodate both large and small screens. The challenge arise when we dealing with big, high-resolution images that contain a large amount of data, resulting in a large file size.
