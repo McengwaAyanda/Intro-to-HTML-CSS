@@ -139,4 +139,4 @@ We keep coming up with different formats in our pursuit of finding the perfect b
 There are four main file formats commonly used on the web these days, each with its own strengths and weaknesses when it comes to compressing images: GIF, SVG, JPG, PNG.
 
 # Responsive Images
-CSS offers a solution for displaying images in different sizes to accommodate both large and small screens. The challenge arise when we dealing with big, high-resolution images that contain a large amount of data, resulting in a large file size.
+CSS offers a solution for displaying images in different sizes to accommodate both large and small screens. The challenge arise when we dealing with big, high-resolution images that contain a large amount of data, resulting in a large file size. This can be problematic for users with limited data plans or slow network as it takes longer to download and can be costly. to fix this issue, consider reducing the size of all your images. This inc
