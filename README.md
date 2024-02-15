@@ -147,3 +147,13 @@ To provide the browser with choices, add the source set attribute. Inside it, li
 This is similar to the previous one but instead of specifying the pixel density like 1X, 2X etc, indicate the width of each file: 480w for 480 pixels wide.
 The browser now decides which image to show based on device density and viewport width. this could lead to a problem where the chosen image does not fit the layout you want. The browser makes the decision early in the loading process, before it knows the CSS or layout details. It does not know the size of the box where the image will go.
 If we know the image will be much smaller than the whole page, we should give the browser more information to make a better choice. Use the sizes attribute in HTML to specify which image to use at different breakpoints. this way, the browser can download the right-sized image for your layout. HTML has powerful options like src set where we can provide a set of images for different resolutions or let the browser choose based on density and viewport width. The sizes allows us to specify how much of the viewport's width the image will take up at each breakpoint. by providing this information in the HTML, we help the browser make intelligent decision, considering network conditions and user preferences.
+
+# Figcaptions and figures
+First, show a picture and add a caption to it. Use the figcaption element to wrap the text and designate it as a caption. then put the image and caption together in a figure element. this gives the browser more information about the content, like the relationship between the image and the caption. it is not a regular paragraph or a generic div. this way search engines and AI can understand that these two pieces of content are connected. 
+figures can be used for more than just images.e.g use them for interactive graphics. Place it in the same spot as images in the code. The figure and figcaption elements are really useful for anything that serves as a visual illustration or a demonstration of a concept that needs a caption.
+
+# Working with media
+ # working with audio
+The audio element is different from the image element because it has both the opening tag and closing tag. This makes it more modern and gives it more power and flexibility. just like the image element, we use a source attribute to provide the URL of the audio.
+"<audio controls src="audio.mp3"></audio>"
+There are different types of audio file formats 
