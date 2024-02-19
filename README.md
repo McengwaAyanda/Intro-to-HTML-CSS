@@ -299,3 +299,20 @@ Let's walk through this with a straightforward example. We commence with a table
 We use the TD element to enclose a cell of content, such as the American goldfinch's name, color, diet, and an image with an image element. Any HTML markup, such as paragraphs, videos, or headlines, can be placed inside these cells. Since there are four columns in this table, each row contains four data cells. The remaining bird information is filled in similarly.
 To enhance the table's appearance, we apply some styling and CSS to customize its look instead of relying on the browser's default styling. As for the header, we place the header content in the first row, wrapping each item in a TH element instead of a TD element. While TD denotes table data, TH signifies table header. The header elements like "Bird," "Color," "Diet," and "Photo" are not in all caps in the HTML document, as they are not acronyms. Instead, they are entered as normal words in HTML, and CSS can be used to alter their appearance. This ensures proper pronunciation when spoken aloud and facilitates easy styling adjustments using CSS.
 These are the fundamental aspects of table markup. There are more advanced techniques to create complex HTML tables, such as spanning content across multiple rows or columns, defining headers, bodies, and footers, or adding a caption. Numerous courses delve deeper into HTML tables, including guidance on creating HTML email templates. However, this course focuses on the basics: the table element, TR for table rows, TH for header content, and TD for cell content.
+
+
+# Introduction to Cascading Style Sheets (CSS)
+# Unit 1: Introduction to CSS
+What is CSS?
+A style sheet, like a CSS file, contains all the styles for your webpage, enhancing its visual appeal. To link HTML and CSS, you simply connect them. HTML and CSS are closely intertwined and complement each other, but before we explore CSS further, let's briefly review HTML.
+HTML focuses on recognizing commonly used elements such as paragraphs, headings, lists, and links, which define a webpage's structure. When you view raw HTML in a web browser, it appears unattractive, with default styles like Times New Roman font, bold headings, and blue underlined links, dictated by a style sheet within the browser. While we can create readable and understandable webpages using only HTML, they lack visual appeal. CSS comes into play to enhance the appearance by altering the font, colors, and spacing.
+CSS comprises two components:
+1. The selector.
+2. The declaration block.
+The selector identifies a pattern in the HTML, and if the pattern matches, the styles within the declaration block are applied to the corresponding HTML elements. Multiple styles can be applied to the same pattern, which is where CSS's cascading feature comes into play. However, we'll keep things straightforward in this course and won't delve deep into cascading.
+# CSS Components
+In CSS, each style declaration comprises two components:
+1. A property.
+2. A value.
+Throughout this course, we'll focus on a specific set of properties and values. However, it's important to note that there's much more to explore if you're interested in furthering your learning and expanding your skills.
+The initial aspect of CSS is the selector because it's crucial to be able to target specific elements in our HTML. Without this capability, understanding properties and values won't be very practical. Therefore, we'll begin this course by creating some visually unappealing web pages. However, don't worry, by the course's end, your pages will significantly improve as we integrate essential styles. Let's delve into the code and get started!
