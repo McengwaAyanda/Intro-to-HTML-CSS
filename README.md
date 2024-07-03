@@ -1,5 +1,6 @@
 # Intro-to-HTML-CSS
 These are the basics of web development.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/d63cd86e-6bc2-4196-b8a7-a25cb3d26007)
 
 # HTML Introduction
 HTML is a standard markup language for creating web pages.
@@ -15,6 +16,7 @@ while others do not
 The HTML document is basically a bunch of HTML elements nested inside each other.
 The browser pays attention to this structure and builds a big family tree that shows how everything is related. it is called a Document Object Model (DOM) tree.
 It is important to pay attention to where we open and close our HTML tags and how we nest elements within each other. this helps convey meaning about the content and interfaces
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/03e3822d-3bf7-44ba-8991-6c7bb5075b3f)
 
 # HTML Headlines
 Web pages usually contains headlines, headings, subheading when dealing with lengthy text, these elements serve the purpose of dividing the content to smaller digestable chunks.
@@ -24,29 +26,39 @@ The h1 is the largest and most prominent, while the h6 is the smallest and least
 The choice of the headline level is not based on appearance but on its meaning. It makes sense to use h1 for the main title and h2 for the subheading after the title.
 The hierarchical system of the headlines gives meaning browser, distinguishing what is most important to what is less important, It also ensures that all article headlines share the same type, h2,
 which is crucial for screen reader users who rely on consistent hierarchical information to navigate the page.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/d15bae08-ac7f-4f2d-8959-fbbbeaaea439)
+
 
 # HTML Bold and Italics
 There are 4 elements in HTML that allow us to mark text as bold or italicized. Two of them '<em>' and '<strong>', convey meaning  and serve a language-related purpose. The other two, '<i>' and '<b>' do not
 carry any specific meaning and are solely for visual styling 
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/548e971c-3514-4747-9472-6bb4f1204969)
+
 
 # HTML lists
 There are 3 types of lists: Ordered list, unordered list and definition list
+
  # Unordered list
 Unordered list are the most commonly used type. each item in the list is enclosed in an <li> element, which represent a list item.
 To define the entire list and specify its type, we wrap all the items in a <ul> element, which stands for unordered list.
 If you want to make our code more readable, indent the list items by adding some space or tabs before each other. However, this indentation does not affect how this page looks.
 The default appearance of the list markers is determined byt the browser, but we choose <ul> not solely for its appearance. It is the appropriate choice for conveying meaning and we can use CSS to change the look.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/830459de-7afd-48a3-a3b9-95b0674e4214)
  # Ordered list
  Ordered list is similar to unordered list but with slight difference. Instead of using <ul> to wrap the list items, we use <ol>.
  The term 'ol' stands for ordered list, indicating that the is a specific order to the items in the list.
+ ![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/6899d211-dd42-4c31-95a7-3c72bfb646a4)
   # Definition list
 Definition list is used when we want to create a lits that resembles a key-value pair in computer science. Instead of just items, we have terms and thier corresponding descriptions.
 To create a definition list, we use specific elements. The term or key is enclosed in a <dt>tag, which stands for definition term. The description or value is enclosed in a <dd>tag, which stands for definition description.
 The entire list is wrapped in a <dl>tag representing the definition list. interestingly, the <dd>tags and <dt>tag are placed side by side without any additional wrapper around them.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/cb371c86-6a9d-4752-b3e5-34f88ff69824)
 
 # HTML Quotes
 These 2 elemnts, <cite> and <blockquote>, serve a semantic purpose. they inform other computers, "Hey this is what it is", additionally, they provide a convenient way to apply custom styling.
 The important thing is that elements should be nested within each other in a way that makes sense.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/9f75d645-d44f-47f7-8e51-62d236ae8388)
+
 To make things easier, we can use <q> element in HTML which stands for quote.  by using this element the browser will add the appropriate quote marks for us.
 Some HTML elements, like <i>, <strong>, <b> and <em> are called inline, because they are meant to wrap around phrases of text that are inline with other content.
 There are certain elements in HTML known as block-level elements, like block quotes, paragraphs and unordered lists. These elements essentially  create separate blocks on the page.
