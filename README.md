@@ -141,19 +141,30 @@ When creating links as developers or content creators, we need to include them o
 
 
 # HTML URL Pathways
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/d5595dec-9802-4c63-98df-a003cdbab169)
+
 When forming links, absolute URLs are one option. When linking to something within the same site and domain as the page containing the link, a relative URL can be used instead.
 Creating a relative URL is not only useful for the "A" element(linking), but it is also a skill used to reference image files, video files, CSS, Javascript files or any other where a files pathis specified.
 To form a URL, you need to grasp how files are organized. filenames comes with extensions like ".html", "jpg", "CSS", "js", whereas directories or folder names have no extentions. The Slashes in a Url indicate that we should look deeper into the file structure or go one level down.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/f178a90c-ab85-489a-8ac5-575224b05911)
+
 Creating well structured and elegent URLs for web page is an art. it is worth considering how your URLs impact user experience and search engine results. Craft URLs carefully.
 Using relative URLs can be extremely helpful, especially when working on a project that moves from server to server.
 URLs can be either relative or absolute. Relative URLs are based on the current files location, while absolute URLs start from the root of the website. By using folders and index.html files, we can create clean and user-friendly URLs.
 
 # Navigation
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/4f2e3588-e875-43d0-9ae4-1bd9e9525544)
+
 Each link is wrapped in an element with the correct URL, and then enclosed in a "<li>" element to create a list of links. To maintain order, wrap the whole list in a "<ul>"element which represents an unordered list. Finally, encompass the entire menu in a "<nav>" element to indicate that it is the site's navigation.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/bfea1912-58df-4e4a-91fd-df6043c3a516)
+
 To give the menu a visual appearance, apply CSS styling. Without CSS styling, it appears as a plain list, however, we want screen readers and assistive devices to understand that it is a main menu.
 Assign the role "navigation" to the "<nav>" element, which signifies that it represents the main navigation of the page. Include an "aria label" for the main menu, providing a descriptive label that can be read alound by a screen reader.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/cbf14093-05dc-4188-950c-d46669dbfcbd)
 
 # HTML Working with Graphics and Images
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/78a40bcf-b614-405f-b01c-a72aea0b901f)
+
 When we want to add images to a web page, we use the image element, which is simply written as "<img src="image.jpg" alt="brown dog" width="400" height="300">"
 there are 4 attributes that need to be included for every image
 1. We have the source attribute(SRC), which tell the browser which image file to load.
@@ -161,13 +172,20 @@ there are 4 attributes that need to be included for every image
 3. lastly we have the width and height attributes, which determine the size of the image. so every image should have all four of these attributes.
 The Image's URL is pasted in the source, and than the image starts loading. Add an ALT attribute, which serves as a replacement for when the image cannot be seen.
 Make the ALT text interesting. There is no need to make a lengthy description just focus on what it depicts. You have the option to make the ALT text funny or poetic, and if there is nothing significant to convey about the image, simply leave the ALT text blank.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/f93d8166-72e2-41d5-9d46-bef8118d7217)
+
 If the ALT is omitted altogether, there is a chance that the image filename will be read aloud, and we definitely do not want that to happen.
 It does not matter whether the height or width is specified first. In HTML, the order of attributes within an element can be whatever you prefer.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/811fd52d-d562-4a16-b718-7914e3819b80)
 
 # Image formats
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/557753cd-9bab-491f-ac80-61d23ed375c3)
+
 The image file itself is a crucial aspect to consider when putting an image on a webpage.It need to be in a file format that web browsers can understand, and there are various options available
 We keep coming up with different formats in our pursuit of finding the perfect balance between small file sizes and visually stunning images. we desire a large amount of data to make the image look fantastic, but also minimize the data to ensure faster downloads and prevent excessive data usage for users. Essentialy, we aim for the highest possible quality with the smallest file size achievable. Each file format employes a distinct approach to tackle this challenge, utilizing different techniques to compress the image.
 There are four main file formats commonly used on the web these days, each with its own strengths and weaknesses when it comes to compressing images: GIF, SVG, JPG, PNG.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/7fdcbf08-6b93-45c8-b2ca-992bd4c176b7)
+
 
 # Responsive Images
 CSS offers a solution for displaying images in different sizes to accommodate both large and small screens. The challenge arise when we dealing with big, high-resolution images that contain a large amount of data, resulting in a large file size. This can be problematic for users with limited data plans or slow network as it takes longer to download and can be costly. to fix this issue, consider reducing the size of all your images. This involves making them physically smaller, reducing colored data, and compressing them further, which works well in small screens. However this approach is used universally, users with big screens will end up with low quality and enlarged images.
