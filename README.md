@@ -70,19 +70,25 @@ You can also combine the time and date using the datetime attribute. first you i
 There are various ways to format the machine-readable time, they are all acceptable and correct, and they apply to many programming languages.
 
 # HTML code, pre and br
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/e4c297e9-f905-4b4b-b34a-dbc30c72bcd9)
 By default, code is treated as an inline element, meaning that it remains part of the sentence its in.
 The 'Br' element is a simple tag without the opening or closing tag. It does not contain anything inside it, it just indicates where the line needs to break
 Pre and code are often combined to display a code block with proper indentation. we have the code, br and pre working together, and these elements are handy for conveying the structure and appearance of code, as well as other types of contents.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/2a4a73ef-4051-4c14-958e-348e50bc6958)
 
 # HTML Superscripts, Subscripts and Small text
 Superscripts, subscripts and small text can be used where you need to mark up certain bits of content as having a different meaning than the rest.
 Subscripts are characters that are set below the normal baseline for text, while Superscript are characters that are set above the normal baseline for text.
 Small, sub, and sup are the elements that can help you get the details right when it comes to typography and conveying the full meaning of your content.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/2be46942-5332-4965-8023-399a2e2d8619)
 
 # Debugging and troubleshooting HTML code
 If you are ever about the markup to use, visit other websites with similar content and use the developer tools to find out which elements they used. it is especially useful if the website was built by a team we admire because studying others' work helps understand how to structure your own HTML
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/036bacd6-1756-47d5-aff2-80c0abbb6791)
 
 # HTML Attributes
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/8dd505ec-2be0-485c-bc62-fa2051ecdc9f)
+
 When looking at global attributes in HTML that work universally, we will look at 4 highly useful ones.
 The class attribute is the most commonly used. it allows us to assign a reusable name to any element, which can than be styled using CSS, for all elements sharing that class.
 Another popular attribute is the Id. it is similar to the class attribute, but we can use unique names once on the entire HTML page. IDs can be used for CSS targeting, but are more specific and can sometimes cause issues.
@@ -90,24 +96,35 @@ IDs come in handy when we need to address specific elements in Javascript or tar
 Class and ID attributes provide a way to name HTML elements and reference them to other parts of the code stack.
 HTML offers many attributes that enhance user interaction and provide hooks into browser power. These attribute such as 'content editable' allow interaction with the screen, keyboard, and assistive devices. They facilitate the editing capability within the browser.
 The 'dir' attribute explicitly indicates the direction which the text flows using "LTR" for Left-To-Right and "RTL" for Right-To-Left scripts. These attributes "lang" and "dir" are considered global attributes and can be used on any HTML element.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/eedaf616-a72d-46f4-b083-d6c623191557)
+
 
 # Aria Roles
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/096de58e-be62-41ec-9c30-7a5d083b5ebe)
 Aria roles are like extra HTML attributes that we can add to HTML elements to make them more meaningful and help browsers understand what they represent. 
 Aria roles come into play when we want to provide essential information to assistive technologies like screen readers, braille displays and magnifiers to ensure a website is fully accessible.
 The accessibility tree is like a companion to the DOM tree, which the browser creates from the websites content. while the DOM tree represents the HTML structure, the accessibility tree is crucial for assistive devices like screen readers.
 When we look at the accessibility tree, we can see that it treats the content as separate text containers. this results in poor experience, such as each letter being read individually. to improve this we use Aria.
 Aria is a powerful tool that greatly enhance web accessibility and is worth exploring further. Aria provides the necessary tools to make your site accessible to everyone.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/15b3c73a-cf5c-4922-996b-4255eb7d7485)
+
 
 # Formatting HTML
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/65871b5b-b64c-4ca8-93f1-afdbfd700d5a)
 In HTML comments are inserted by typing "<!-- comments -->". These comments are disregarded by the browser, but code editors like Notepad++ can display commented code or remarks in a grayed-out fashion. 
 This feature helps developers quickly identify when code is commented out and prevents any confusion when it does not function as expected.
 People used to capitalize all their HTML elements, but as HTML evolved, the web industry embraced the idea of using lowercase letters for everything. The broswer isn't affected either way.
 Some HTML elements are short like <i> and <p> while some are long like <article> and <video>. The reason for this is that when HTML was first created, computer scientist were focused on optimizing file size due to limited computer resources. 
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/c8d86c9a-8b05-4d9a-8ac8-b80f2c364ddd)
 As technology advanced and computer memory expanded, it became less crucial to save a few characters and more important to prioritize code readability and understanding for humans. Hence, newer HTML elements started using complete words instead of abbriviations. This change made it easier for english-speaking people to comprehend the code.
 Nowadays, the length of an element can give us a clue about how long it has been in existance.
 A bunch of elements in this course and most of them have a opening and closing tag. The newer HTML elements always have both tags, but for some of the older elements the are no closing tags.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/8a937fb4-22ea-468a-a8d0-1fbcc4256b57)
+
 
 # Unusual characters
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/33d3c929-1726-4513-ae5a-08a8bea363f5)
+
 The symbols < > and & are important characters in HTML.
 In the demo, we used something called character entity in HTML. These entities are formatted like this: an ampersand, ashort code and a semicolon. When we use these in HTML files, they are converted into the specific characters we want. we applied this technique to replace every instance of greater-than or less-than symbols with their corresponding character entities.
 
@@ -120,6 +137,8 @@ By default, the "A" element is inline and can be placed within a paragraph or an
 When linking to another website or a specific page on a web, you can include the entire URL. It doesn't matter if it has a trailing slash or not. These types of URLs are called "Absolute URLs" because they point to a precise location on the web. 
 In an absolute Url, the HTTP or HTTPS part must be included which stands for "HyperText Transfer Protocol". This protocol defines the rules of communication on the web and is crucial for linking.
 When creating links as developers or content creators, we need to include them ourselves. This protocol is one of the significant inventions when the web was created. This is how links are made using absolute URLs.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/c4b7ca53-fd8f-4b7e-b972-1c22507009d7)
+
 
 # HTML URL Pathways
 When forming links, absolute URLs are one option. When linking to something within the same site and domain as the page containing the link, a relative URL can be used instead.
