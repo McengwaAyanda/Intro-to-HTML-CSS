@@ -184,11 +184,13 @@ It does not matter whether the height or width is specified first. In HTML, the 
 The image file itself is a crucial aspect to consider when putting an image on a webpage.It need to be in a file format that web browsers can understand, and there are various options available
 We keep coming up with different formats in our pursuit of finding the perfect balance between small file sizes and visually stunning images. we desire a large amount of data to make the image look fantastic, but also minimize the data to ensure faster downloads and prevent excessive data usage for users. Essentialy, we aim for the highest possible quality with the smallest file size achievable. Each file format employes a distinct approach to tackle this challenge, utilizing different techniques to compress the image.
 There are four main file formats commonly used on the web these days, each with its own strengths and weaknesses when it comes to compressing images: GIF, SVG, JPG, PNG.
-![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/7fdcbf08-6b93-45c8-b2ca-992bd4c176b7)
-
 
 # Responsive Images
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/55a1dc13-96d8-472d-a127-c6163ad9aa91)
+
 CSS offers a solution for displaying images in different sizes to accommodate both large and small screens. The challenge arise when we dealing with big, high-resolution images that contain a large amount of data, resulting in a large file size. This can be problematic for users with limited data plans or slow network as it takes longer to download and can be costly. to fix this issue, consider reducing the size of all your images. This involves making them physically smaller, reducing colored data, and compressing them further, which works well in small screens. However this approach is used universally, users with big screens will end up with low quality and enlarged images.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/666098be-7840-43da-b438-4bd3b5c4377e)
+
 HTML allows us to deliver different image file to different screen sizes. We can create multiple image files and include them as options to hour HTML code. then the browser and the operating system(OS) takes into account the device's hardware capabilities and network speed to decide on which image to download.
 To begin, start with the basic code of loading the image on a webpage. Use an image element with the source attribute that points to the image file, along with ALT text, width, and height. To support different screens, create copies of an image with different resolutions and inform the browser about these options. Then, the device can choose which image to use based on factors like screen density, network connection and user settings. Even if someone has higher-resolution screen, the browser can opt to download a lower-resolution image. 
 To demonstrate this, there are four copies of a photo at different widths: 480, 960, 1440, and 1920 pixels. Duplicate the basic HTML code for displaying the image to make changes and compare the results. write code in a usual way, which works well with older browsers and include source attribute pointing to the 1X version of the image, ALT text, Width and Height.
@@ -196,13 +198,20 @@ To provide the browser with choices, add the source set attribute. Inside it, li
 This is similar to the previous one but instead of specifying the pixel density like 1X, 2X etc, indicate the width of each file: 480w for 480 pixels wide.
 The browser now decides which image to show based on device density and viewport width. this could lead to a problem where the chosen image does not fit the layout you want. The browser makes the decision early in the loading process, before it knows the CSS or layout details. It does not know the size of the box where the image will go.
 If we know the image will be much smaller than the whole page, we should give the browser more information to make a better choice. Use the sizes attribute in HTML to specify which image to use at different breakpoints. this way, the browser can download the right-sized image for your layout. HTML has powerful options like src set where we can provide a set of images for different resolutions or let the browser choose based on density and viewport width. The sizes allows us to specify how much of the viewport's width the image will take up at each breakpoint. by providing this information in the HTML, we help the browser make intelligent decision, considering network conditions and user preferences.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/2cd1a4fe-ac95-43e0-9007-7161a24b8be3)
 
 # Figcaptions and figures
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/04911c6c-2693-4dae-86f7-ba3294ec3f06)
+
 First, show a picture and add a caption to it. Use the figcaption element to wrap the text and designate it as a caption. then put the image and caption together in a figure element. this gives the browser more information about the content, like the relationship between the image and the caption. it is not a regular paragraph or a generic div. this way search engines and AI can understand that these two pieces of content are connected. 
 figures can be used for more than just images.e.g use them for interactive graphics. Place it in the same spot as images in the code. The figure and figcaption elements are really useful for anything that serves as a visual illustration or a demonstration of a concept that needs a caption.
 
 # Working with media
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/0c7557b4-6053-4362-a0fd-7c4dfe2f5ca5)
+
  # working with audio
+ ![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/3aff721d-bba1-4585-9ab1-73e1eadc527b)
+
 The audio element is different from the image element because it has both the opening tag and closing tag. This makes it more modern and gives it more power and flexibility. just like the image element, we use a source attribute to provide the URL of the audio.
 "<audio controls src="audio.mp3"></audio>"
 There are different types of audio file formats like MP3, which are not useful on its own and we need to let the browser know that we need it to provide controls like button, timeline and volume control. Using the built-in controls is optional. Instead of using the built-in audio controls, we can create our own controls using JavaScript and HTML media element API. We will add the controls attribute and if the attribute is present that means now there is an audio player on the page. This allows us to play, pause, adjust the volume, see the time and navigate through the timeline. This audio element demonstrate the power of HTML, providing a range of functionality without having to build from stratch.
@@ -214,6 +223,8 @@ Create multiple files and list them in separate source elements, and the browser
 furthermore, it is possible to provide fallback text within the audio element, which will be displayed if the browser does not understand the audio element at all. This demonstrates the resilience of HTML, where a single set of code can cater to a wide variety of browsers and provide a suitable user experience. The audio element is an excellent tool for embedding audio files and a player on the webpage.   
  
  # working with video
+ ![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/ab4bb33f-f263-45e5-be1a-297f22bb9062)
+
 The web has completely changed how we connect and share things, including movies, TV shows, and even teaching. Thanks to the power of the web, we can now easily put videos on web pages using HTML video element.
 Just like the audio element, the video element has an opening and closing tag. to display a video, use the source attribute to specify the video file. and if the controls attribute is added, the browser will automatically create a video player.
 The first problem has to do with video encoding. For this example, a video file has been created with 480p resolution, compressed using the H.264 codec, and delivered as an MP4 file. 480p means the video has 480 lines of resolution and is 720 pixels wide by 400 pixels tall. It is not HD or 4K, just standard quality. The H.264 codec was chosen because it is widely supported by browsers.
@@ -226,6 +237,8 @@ To address this challenge, major streaming platforms such as Netflix, Hulu, HBO,
 Given the complexity involved, it's common for websites to opt for embed codes from video hosting services rather than directly employing the video element. This decision is often made to streamline the process and capitalize on the capabilities offered by such services.
  
  # Working with Captions and subtitles
+ ![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/d05378c8-d401-4cdd-af0c-a8afc4e7f70f)
+
 It's remarkable how websites can incorporate audio and video elements, yet accessibility remains a challenge as not everyone can hear or understand them consistently. Some individuals may be deaf, while others might experience intermittent hearing issues or difficulty comprehending content due to various factors. Even for those who can hear, listening isn't always feasible.
 For instance, you might wish to watch a video but cannot use speakers or headphones in certain settings. Alternatively, you might be listening, but the speaker's accent or fast speech pace poses comprehension challenges. You might even be in such a situation right now, relying on captions for video content. Fortunately, the web empowers content providers to offer information in multiple formats simultaneously.
 We will utilize the track element linked to a text file to incorporate captions into the video. This element enhances the video player's capabilities, enabling viewers to toggle captions on/off or switch between different subtitle options. On the web, a file format known as ibvtt (web video text tracks) will be employed. It's a straightforward text file with a vtt extension, adhering to a specific convention for providing information. Each line of text in the file is accompanied by a time code indicating when it should appear in the video.
@@ -235,28 +248,41 @@ The kind attribute also offers other options. For instance, using "descriptions"
 In the subsequent section, the utilization of platforms like YouTube or Vimeo, where caption files can be uploaded to provide similar functionality, will be discussed. Captions and subtitles are not only impactful but often legally required. Including them enhances accessibility and inadvertently broadens your audience base. So, incorporate captions and witness your traffic increase!
 
 # Embedding media via IFrames.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/ea5d77fb-368d-4223-9445-a221265296cb)
+
 Embedding refers to taking content from one site and placing it within the middle of another site's page. 
 There exists a broad spectrum of content that can be integrated into a webpage. For instance, this includes a map from Google or Mapbox, a code demonstration from CodePen or Glitch, or even a presentation slide deck from Speaker Deck or Notist. It's a common practice to embed intricate content from a service that manages the technical complexities. Instead of grappling with the development of a mapping service, a slide deck system, a code demonstration platform, or an adaptive bitrate server, one can rely on the toolkit provided by others to handle these tasks. All that's needed is to embed the outcomes onto a website. So, what level of HTML proficiency is required to streamline this process?
 You don't necessarily have to grasp every detail because YouTube's engineers have already handled it. However, with your newfound ability to interpret HTML, you can recognize a lot. For instance, the iframe element features attributes such as height and width that are adjustable. The src attribute is utilized to designate the source of the video file.
 Although iframes offer versatility, it's essential to factor in security concerns when incorporating code from external websites.
 When utilizing a pre-configured content management system (CMS) such as WordPress or Drupal established by someone else, it may not be straightforward to directly copy and paste arbitrary embed codes from external sites. Typically, these CMS platforms have specific methods for allowing URLs or shortcodes only from trusted sources. For embedding items like YouTube videos, it's advisable to seek guidance from someone proficient in effectively utilizing the CMS.
 Additionally, when constructing a website, it's crucial to consider security implications associated with the iframe element. If multiple individuals will be contributing content to the system, indiscriminately permitting all iframes without considering security measures is unwise. However, if you are the sole contributor of videos to the website, there isn't much cause for concern.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/56808545-1f01-480c-aeb6-65aa363e2273)
+
 
 # HTML Content Identification
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/f03472bf-b62d-459e-8419-2b7810f3565d)
+
 The internet spans the globe, encompassing diverse languages spoken by people worldwide. HTML offers mechanisms to specify the language of your content. By configuring these settings accurately, search engines can discern the language of websites. Spell checkers will apply suitable dictionaries, and when a browser reads content aloud, it will pronounce words correctly. It's crucial for computers to identify the language of the content they process.
 The lang attribute serves to designate the language of a webpage. If the entire page is in one language, the process is straightforward. Simply set the language on the main element encapsulating everything else, typically the HTML element. This may only need to be done once, such as in a template file that applies universally across the site, but it's crucial not to overlook this step!
 For instance, using "en-US" in the lang attribute indicates U.S. English, while "en-GB" denotes English in Great Britain. This distinction is significant for functionalities like spell checkers. Consider whether you prefer "color" spelled with or without a "u". In the U.K., it includes a "u". Therefore, specifying the preferred dictionary and pronunciation is essential. Rather than opting for a generic "lang=en" for English, it's advisable to be more precise.
 The lang attribute offers various options beyond indicating language or regional variants; it can also denote other characteristics such as the writing system utilized. If your webpage features multiple languages, specify the language for each segment of content using the lang attribute on relevant elements. For example, if the majority of the page is in Mexican Spanish but includes block quotes in Nahuatl, apply lang="es-mx" on the outer HTML element and lang="nah" on the block quote elements.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/ee029719-7b4d-4d41-81b8-ef2ad8cd5cae)
+
 Additionally, it's vital to specify the content's direction. While most languages read from left to right horizontally, some follow a right-to-left flow. Utilize the dir attribute to indicate the direction, which can be applied to any element. If all content on your page shares the same directionality, define it once on the outer HTML element.
 To wrap things up, do not forget to set the charset for your project. What is that? Well, each language uses its own set of characters or alphabet. In the past, computer character sets were limited and mainly focused on the Latin alphabet. You may have heard of ASCII, which was created in the 1960s and consisted of only 128 characters from English typewriters. Nowadays, Unicode, particularly UTF-8, is widely used. It is like a massive specification that encodes content to support a vast range of characters, scripts, and even emojis. Unicode started with around 7,000 characters in 1991 and has now expanded to over 137,000, aiming to encompass all languages, scripts, and communication forms like Braille and musical notation.
 Inform the browser about the character set being used. Otherwise, things can get pretty strange if the computer expects one thing and receives another. 
 To specify the charset in HTML, simply include a meta charset tag that equals UTF-8. Place this meta element within the head element on every page of the website, which will be explained further in the chapter eight: HTML Integrations.
 Initially, the web made a lot of assumptions about the languages and scripts people would use, and it only supported a few. Over the years, extensive efforts have been made to ensure everyone's inclusion. By defining the lang, dir, and charset for a project, you contribute to a more inclusive future for the web.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/5cd8a418-c3c3-41d0-8a08-53e419e6ea99)
 
 # HTML Generic elements, Div and Span
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/fa2e44f8-70d9-4fe4-9f44-b92eb5d938b5)
+
 Several HTML elements have been discussed for various purposes, but what about situations when a specific element is needed that doesn't exist? Sometimes, there's a necessity to group elements or highlight a phrase without a predefined semantic meaning. Other times, targeting a specific part of the DOM with CSS or Javascript is required, even if it lacks inherent semantic significance. In such cases, two reliable elements are at our disposal: div and span. If you've worked as a developer writing HTML, chances are you've encountered these elements before.
 Before 2010, prior to HTML5's introduction with its helpful semantic elements, divs were heavily relied upon for a multitude of purposes. Divs were utilized for creating sections, sidebars, and various other structural elements. Even today, people tend to excessively use divs and spans in HTML, often without further consideration. This course aims to underscore the importance of semantic HTML.
 Technically, one could use divs and spans for everything. Some developers even place titles within divs and make spans simulate buttons. While HTML won't produce an error, and browsers will still attempt to parse the page, it's not considered best practice. This approach can negatively impact user experience. We strongly encourage avoiding excessive use of divs and spans for minor elements and instead opting for the appropriate HTML element that serves the purpose.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/6f25d52e-0a64-4fcd-9e57-58004c57e06d)
+
 However, there are instances when a generic element is necessary. Div is a block-level element, whereas span is an inline element. They essentially have no inherent function until CSS or Javascript is applied to them.
 Consider a simple article enclosed within an article element, comprising a headline and four paragraphs. When working on the CSS layout, there's a need to group these paragraphs together to apply a background color exclusively to them, leaving everything else unaffected. To achieve this, introduce a div with a class called "boxes". By targeting this box class with CSS, the desired changes can be achieved.
 Now, imagine a specific phrase within the text requires targeted treatment, such as being written in Spanish and needing its language attribute updated accordingly. In this scenario, use the inline element span to delineate the desired phrase. Both div and span can utilize various global attributes like class, id, lang, and aria roles.
@@ -264,6 +290,8 @@ Div and span serve as useful fallback options when no other suitable element exi
 
 # Unit 8: HTML Intergration
 # HTML Intergration
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/12f1af3d-e04c-44f8-8772-d3ce0b703bdc)
+
 The comprehensive coverage of HTML, including its elements, attributes, roles, and tools utilized to structure content on websites or web applications, has been addressed. HTML not only plays a pivotal role in defining these elements but also serves as a fundamental component of the web itself.
 When accessing a website, users typically open a web browser or web view and input a URL. This can be done by manually typing it into the address bar, clicking on a search result or link, or through an app. Regardless of the method, a URL is involved. In response, the web server sends back the specific HTML file associated with that address.
 In the earlier stages of the web, everything necessary to display a webpage was contained within a single HTML file, alongside images. However, with the advancement of technology, the process has become more intricate. Text is often stored in databases, and multiple static files are dynamically combined in real-time, tailored for each user. Visual styling is stored in CSS files, JavaScript in separate JavaScript files, and additional files are used for images, video, audio, and advertisements.
@@ -274,6 +302,8 @@ Within the HTML file, several critical components are necessary for every webpag
 Furthermore, certain specifics about the webpage, such as the language and content flow direction, are declared at the outset. These specifications ensure clarity for browsers and users alike.
 The HTML file is further organized into two primary sections: the head and the body, marked by the head and body elements, respectively. The head contains metadata essential for the browser but not displayed on the page, while the body encompasses the visible content, composed of various elements discussed in this course. The body serves as the primary area for webpage content and interactions.
 In summary, the doctype declaration, HTML head, and body elements constitute the foundational elements of every webpage.
+![image](https://github.com/McengwaAyanda/Intro-to-HTML-CSS/assets/81769629/85b87a06-2699-455e-924e-d45c36a5867b)
+
 
 # Document Header
 Within the head section of a webpage lies crucial information that the browser requires to understand the website. Recall the importance of specifying the character set? This is where it becomes relevant.
